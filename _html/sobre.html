@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ADV Player</title>
+    <link rel="stylesheet" type="text/css" href="../_css/sobrestyle.css">
+
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>ADV Player</h1>
+            <h2>Audiodescrição de Vídeo Digital</h2>
+        </hgroup>
+
+        <img id="icone" src="../_imagens/advplayer.png">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="index.html">Página Inicial</a></li>
+                <li onmouseover="mudaFoto('../_imagens/advplayer.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="adv_player_open.html">ADV Player</a></li>
+                <li onmouseover="mudaFoto('../_imagens/Prose-Icon-Web-Pages.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="sobre.html">Sobre o Site</a></li>
+                <li onmouseover="mudaFoto('../_imagens/login-icon-png-18.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+<footer id="rodape">
+
+    <p> Copyright &copy; 2018 - by Robson Cavalcante <br/>
+        <a  href="http://facebook.com/robson.cavalcante.1675" target="_blank">Facebook</a> | <a href="https://www.instagram.com/robson_cavalcante07" target="_blank">Instagram</a>
+    </p>
+</footer>
+</div>
+</body>
+</html>

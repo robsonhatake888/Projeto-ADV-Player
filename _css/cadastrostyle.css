@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("../_imagens/background2.jpg");
+    background-size: cover;
+    background-position: top;
+    font-family: sans-serif;
+}
+.sign_up{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 420px;
+    margin: auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: Verdana;
+    margin-top: 100px;
+
+}
+.sign_up h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.sign_up input, select{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+
+}
+
+.sign_up input[type=submit]{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+#fname{
+    width: 49%;
+}
+#lname{
+    width: 49.5%;
+}
+#email{
+    width: 100%;
+}
+#password{
+    width: 49.5%;
+}
+#re_password{
+    width: 49%;
+}
+input[type=submit]:hover{
+    background: #2DBDE5;
+    color: black;
+    transition: 0.6s;
+}
+option{
+    color: #fff;
+    background: #1c8adb ;
+}
+

@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/BebasNeue-Regular.otf");
+}
+@font-face {
+    font-family: 'FonteTexto';
+    src: url("../_fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: 'FonteSub';
+    src: url("../_fonts/BebasNeue Regular.otf");
+}
+
+body{
+    font-family: 'FonteTexto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D3540;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    color: #1c8adb;
+    text-decoration: none;
+
+}
+a:hover{
+    cursor: pointer;
+    color: #2DBDE5;
+    transition: 0.6s;
+}
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -1.9px;
+    left: 590px;
+    margin-left: 0;
+}
+nav#menu li{
+    display: inline-block;
+    background: #1E629D;
+    color: #fff;
+    padding: 10px;
+    margin: 2px;
+    font-family: 'FonteLogo', sans-serif;
+    border-radius: 5px;
+    font-size: 15pt;
+}
+nav#menu li:hover{
+    cursor: pointer;
+    background: #2DBDE5;
+    transition: 0.6s;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+div#interface{
+    width: 1000px;
+
+    margin: -20px auto 0 auto;
+    padding: 10px;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1000px;
+    top: 80px;
+    width: 200px;
+}
+header#cabecalho{
+    border-bottom: 1px #1c8adb solid ;
+    height: 150px;
+}
+header#cabecalho h1{
+    font-family:  'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0;
+    margin-bottom: 3px;
+    position: absolute;
+    top: 10px;
+}
+header#cabecalho h2{
+    font-family: 'FonteLogo', sans-serif;
+    color: #ffffff;
+    font-size: 15pt;
+    padding: 0;
+    margin-top: 2px;
+    position: absolute;
+    top: 45px;
+}
+section#corpo{
+    display: block;
+    width: 650px;
+    float: left;
+    border-right: 1px solid #1c8adb;
+    padding-right: 15px;
+
+}
+article#principal h2{
+    font-size: 20px;
+    color:#1c8adb;
+    background-color: white;
+    padding: 5px 0 5px 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+
+}
+header#cabecalho-artigo h1{
+    font-family: 'FonteSub', sans-serif;
+    font-size: 20pt;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+header#cabecalho-artigo h2{
+    font-family: 'FonteSub', sans-serif;
+    font-size: 13pt;
+    color: #cecece;
+    background: none;
+    margin: 0;
+}
+.direita{
+    text-align: right;
+}
+header#cabecalho-artigo h3{
+    font-size: 12px;
+    color: white;
+
+}
+aside#lateral{
+    display: block;
+    width: 200px;
+    float: right;
+}
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #1c8adb;
+    margin-top: auto;
+}
+footer#rodape p{
+    text-align: center;
+}
+footer#rodape a{
+    color: #1c8adb;
+}
+footer#rodape a:hover{
+    cursor: pointer;
+    color: #2DBDE5;
+    transition: 0.6s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+}
+.float-letf{
+    float: left;
+}
+float-rigth{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+.player_video{
+    position: relative;
+    float: left;
+    width: 640px;
+    height: 360px;
+    background-color: black;
+
+}
+.player_video video{
+    width: 100%;
+    height: 100%;
+}
+.video_preloader{
+    display: none;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 43%;
+    top: 35%;
+    background: url("../_imagens/ajax-loader.gif") center center no-repeat;
+    background-size: auto 60%;
+}
+
+.player_video .video_controls{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+.video_controls .video_btn{
+    display: block;
+    width: 40px;
+    height: 90%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.video_controls .video_btn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video_controls .video_rewind{
+    background: url("../_imagens/rewind.png") center center no-repeat;
+    background-size: auto 50%;
+}
+.video_controls .video_stop{
+    background: url("../_imagens/stop.png") center center no-repeat;
+    background-size: auto 50%;
+}
+.video_controls .video_play{
+    background: url("../_imagens/play-button.png" )  center center no-repeat;
+    background-size: auto 50%;
+}
+
+.video_controls .video_fast{
+    background: url("../_imagens/fast-forward.png")  center center no-repeat;
+    background-size: auto 50%;
+}
+.video_controls .video_volume{
+    background: url("../_imagens/speaker-filled-audio-tool.png" )  center center no-repeat;
+    background-size: auto 50%;
+}
+.video_controls .video_advol{
+    background: url("../_imagens/ad-logo.png") center center no-repeat;
+    background-size: auto 80%;
+}
+.video_controls .video_help{
+    background: url("../_imagens/question-mark.png") center center no-repeat;
+    background-size: auto 70%;
+}
+.video_controls .video_screen{
+    background: url("../_imagens/switch-to-full-screen-button.png") center center no-repeat;
+    background-size: auto 50%;
+    position: absolute;
+    left: 590px;
+}
+.video_progress_bar{
+    cursor: pointer;
+    width: 100%;
+    height: 10%;
+    background-color: #1c8adb;
+}
+.video_loader{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255,255,255, 0.5);
+}
+.video_progress{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #2DBDE5;
+}
+.video_controls .video_time{
+    display: block;
+    cursor: default;
+    color: white;
+    font-size: 0.9em;
+    padding: 8px 5px;
+}
+
+
+
+
+.video_volume:hover, .slide{
+    overflow: visible;
+    display: block;
+    background-color: rgba(255,255,255, 0.5);
+    width: 80px;
+    height: 20%;
+    margin: 2% 0;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 1px;
+    border-radius: 5px;
+}
+.slider_vol{
+    width: 100%;
+    background-color: #2DBDE5;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}

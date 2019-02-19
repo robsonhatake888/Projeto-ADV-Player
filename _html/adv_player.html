@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title> ADV Player </title>
+    <link rel="stylesheet" type="text/css" href="../_css/adv_player_style.css" />
+    <script type="text/javascript" src="../_javascript/adv_player_script.js" ></script>
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+<body oncontextmenu="return false;">
+
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>ADV Player</h1>
+            <h2>Audiodescrição de Vídeo Digital</h2>
+        </hgroup>
+
+        <img id="icone" src="../_imagens/advplayer.png">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="index.html">Página Inicial</a></li>
+                <li onmouseover="mudaFoto('../_imagens/advplayer.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="adv_player_open.html">ADV Player</a></li>
+                <li onmouseover="mudaFoto('../_imagens/Prose-Icon-Web-Pages.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="sobre.html">Sobre o Site</a></li>
+                <li onmouseover="mudaFoto('../_imagens/login-icon-png-18.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <input type="text" id="link" name="video_campo" size="40">
+     //<input type="button" onclick="Enviar();" name="botao-ok" value="Ok">
+
+        <script type="text/javascript">
+            function Enviar() {
+                var link = document.getElementById("link");
+                var link2;
+                if (link.value != "") {
+                    link2.value = link.value;
+                }
+            }
+        </script> -->
+
+    <br>
+        <br>
+
+    <div id="video"  class="player_video" onmouseover="prepare(this)">
+        <video id="myVideo" class="video-view"  poster="../_imagens/cursos-para-deficiente-visual-gratuito-em-são-paulo.jpg" preload="none" >
+            <source id="linkVideo" src="../_media/teste.mp4" type="video/webm"/>
+        </video>
+
+        <div class="video_preloader"></div>
+
+        <div class="video_controls">
+
+            <div class="video_progress_bar float-letf" >
+
+                <div class="video_loader"></div>
+
+                <div class="video_progress"></div>
+
+            </div>
+            <div class="video_stop float-letf video_btn"></div>
+
+            <div class="video_rewind float-letf video_btn"></div>
+
+            <div class="video_play float-letf video_btn"></div>
+
+            <div class="video_fast float-letf video_btn"></div>
+
+            <div class="video_time float-letf"> 00:00 | 00:00 </div>
+
+            <div class="video_volume float-letf video_btn"></div>
+
+            <div class="slide float-letf">
+                <div class="slider_vol"></div>
+            </div>
+            <div class="video_advol float-letf video_btn"></div>
+
+            <div class="video_help float-letf video_btn"></div>
+
+            <div class="video_screen float-right video_btn"></div>
+
+        </div>
+
+            <div class="clear"></div>
+    </div>
+
+
+        <footer id="rodape">
+
+            <p> Copyright &copy; 2018 - by Robson Cavalcante <br/>
+                <a  href="http://facebook.com/robson.cavalcante.1675" target="_blank">Facebook</a> | <a href="https://www.instagram.com/robson_cavalcante07" target="_blank">Instagram</a>
+            </p>
+        </footer>
+    </div>
+    </body>
+    </html>

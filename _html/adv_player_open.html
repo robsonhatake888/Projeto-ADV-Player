@@ -1,0 +1,117 @@
+<!DOCTYPE html "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>ADV Player</title>
+    <link rel="stylesheet" type="text/css" href="../_css/adv_player_open_style.css" />
+    <script type="text/javascript" src="../_javascript/adv_player_open_script.js" ></script>
+    <script type="text/javascript" src="../_javascript/atalho.js" ></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+
+</head>
+<script>
+    function mudaFoto(foto) {
+        document.getElementById("icone").src = foto;
+    }
+</script>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>ADV Player</h1>
+            <h2>Audiodescrição de Vídeo Digital</h2>
+        </hgroup>
+
+        <img id="icone" src="../_imagens/advplayer.png">
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li onmouseover="mudaFoto('../_imagens/home.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="index.html">Página Inicial</a></li>
+                <li onmouseover="mudaFoto('../_imagens/advplayer.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="adv_player_open.html">ADV Player</a></li>
+                <li onmouseover="mudaFoto('../_imagens/Prose-Icon-Web-Pages.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="sobre.html">Sobre o Site</a></li>
+                <li onmouseover="mudaFoto('../_imagens/login-icon-png-18.png')" onmouseout="mudaFoto('../_imagens/advplayer.png')"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="video" class="player-video" onmouseover="prepare(this)">
+
+
+        <video id="myVideo" class="video-view"  poster="../_imagens/cursos-para-deficiente-visual-gratuito-em-são-paulo.jpg"  >
+            <source id="linkVideo" src="https://drive.google.com/file/d/1gOOT_AH3g5Ia6qLH6O94EAih-ZyuwtXD/preview"/>
+        </video>
+
+        <div class="video-preloader"></div>
+
+        <div class="video-controls">
+
+            <div class="video-progress-bar float-left">
+                <div class="video-loader"></div>
+                <div class="video-progress"></div>
+            </div>
+            <div class="video-stop float-left video-btn"></div>
+            <div data-skip="-10" class="video-rewind float-left video-btn"></div>
+            <div class="video-play float-left video-btn"></div>
+            <div data-skip2="25" class="video-fast float-left video-btn"></div>
+            <div class="video-time float-left">00:00 | 00:00</div>
+            <div class="video-volume float-left video-btn"></div>
+            <div class="slider float-left">
+                <div class="slider-vol"></div>
+            </div>
+            <div class="video-advol float-left video-btn"></div>
+            <div class="video-velocity float-left video-btn"></div>
+            <div class="video-tom float-left video-btn"></div>
+            <!--<div class="video-help float-left video-btn"></div> -->
+            <div class="video-screen float-right video-btn"></div>
+
+
+        </div>
+
+        <div class="clear"></div>
+
+    <div class="row">
+        <label>Seleção de voz: </label>
+        <select id="voices"></select>
+    </div>
+    <div class="row">
+        <div class="col s6">
+            <label>Velocidade: </label>
+            <p class="range-field">
+                <input type="range" id="rate" min="1" max="100" value="10" />
+            </p>
+        </div>
+        <div class="col s6">
+            <label>Tom: </label>
+            <p class="range-field">
+                <input type="range" id="pitch" min="0" max="2" value="1" />
+            </p>
+        </div>
+        <div class="col s12">
+
+        </div>
+    </div>
+
+    <a href="#" id="speak" class="waves-effect waves-light btn">Executar</a>
+    </form>
+</div>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.js"></script>
+
+
+
+<script  src="../_javascript/speak.js"></script>
+
+
+    <footer id="rodape">
+
+        <p> Copyright &copy; 2018 - by Robson Cavalcante <br/>
+            <a  href="http://facebook.com/robson.cavalcante.1675" target="_blank">Facebook</a> | <a href="https://www.instagram.com/robson_cavalcante07" target="_blank">Instagram</a>
+        </p>
+    </footer>
+</div>
+</body>
+</html>

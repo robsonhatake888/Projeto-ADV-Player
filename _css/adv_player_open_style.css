@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'FonteLogo';
+    src: url("../_fonts/BebasNeue-Regular.otf");
+}
+@font-face {
+    font-family: 'FonteTexto';
+    src: url("../_fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: 'FonteSub';
+    src: url("../_fonts/BebasNeue Regular.otf");
+}
+
+body{
+    font-family: 'FonteTexto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D3540;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+a{
+    color: #1c8adb;
+    text-decoration: none;
+
+}
+a:hover{
+    cursor: pointer;
+    color: #2DBDE5;
+    transition: 0.6s;
+}
+nav#menu{
+    display: block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -1.9px;
+    left: 590px;
+    margin-left: 0;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 1000px;
+    top: 80px;
+    width: 200px;
+}
+nav#menu li{
+    display: inline-block;
+    background: #1E629D;
+    color: #fff;
+    padding: 10px;
+    margin: 2px;
+    font-family: 'FonteLogo', sans-serif;
+    border-radius: 5px;
+    font-size: 15pt;
+}
+nav#menu li:hover{
+    cursor: pointer;
+    background: #2DBDE5;
+    transition: 0.6s;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #1c8adb;
+    margin-top: auto;
+}
+footer#rodape p{
+    text-align: center;
+}
+footer#rodape a{
+    color: #1c8adb;
+}
+footer#rodape a:hover{
+    cursor: pointer;
+    color: #2DBDE5;
+    transition: 0.6s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+
+/* Player Video */
+
+.player-video{
+    position: relative;
+    float:left;
+    width: 640px;
+    height: 360px;
+    background-color: #000;
+}
+.player-video video{
+    width: 100%;
+    height: 100%;
+}
+
+.video-preloader{
+    display: none;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 43%;
+    top: 35%;
+    background: url(../_imagens/ajax-loader.gif) center center no-repeat;
+    background-size: auto 40%;
+}
+.player-video .video-controls{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    visibility:hidden;
+    transition: all .5s;
+}
+.player-video:hover .video-controls{
+
+        visibility: visible;
+
+}
+.video-controls .video-btn{
+    display: block;
+    width: 40px;
+    height: 90%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.video-controls .video-btn:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.video-controls .video-rewind{
+    background: url("../_imagens/rewind.png") center center no-repeat;
+    background-size: auto 50%;
+}
+.video-controls .video-stop{
+    background: url("../_imagens/stop.png") center center no-repeat;
+    background-size: auto 50%;
+}
+.video-controls .video-play{
+    background: url("../_imagens/play-button.png" )  center center no-repeat;
+    background-size: auto 50%;
+}
+
+.video-controls .video-fast{
+    background: url("../_imagens/fast-forward.png")  center center no-repeat;
+    background-size: auto 50%;
+}
+.video-controls .video-volume{
+    background: url("../_imagens/speaker-filled-audio-tool.png" )  center center no-repeat;
+    background-size: auto 50%;
+}
+.video-controls .video-advol{
+    background: url("../_imagens/ad-logo.png") center center no-repeat;
+    background-size: auto 80%;
+}
+.video-controls .video-help{
+    background: url("../_imagens/question-mark.png") center center no-repeat;
+    background-size: auto 70%;
+}
+.video-controls .video-screen{
+    background: url("../_imagens/switch-to-full-screen-button.png") center center no-repeat;
+    background-size: auto 50%;
+    position: absolute;
+    left: 590px;
+}
+.video-controls .video-velocity{
+    background: url("../_imagens/speedometer.png" )  center center no-repeat;
+    background-size: auto 50%;
+}
+.video-controls .video-tom{
+    background: url("../_imagens/equalizator-buttons.png" )  center center no-repeat;
+    background-size: auto 50%;
+}
+
+
+.video-loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255,255,225,0.5);
+}
+.video-progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #1c8adb;
+}
+.video-controls .video-time{
+    display: block;
+    cursor: default;
+    color: #fff;
+    font-size: 0.9em;
+    padding: 8px 5px;
+}
+
+.slider{
+    background-color: rgba(255,255,225,0.8);
+    width: 80px;
+    height: 20%;
+    margin: 2% 0;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 1px;
+
+}
+.slider-vol{
+    width: 100%;
+    background-color: #1c8adb;
+    height: 100%;
+    cursor: pointer;
+}
+ .slider{
+
+}
+
+
+
+
+
+
